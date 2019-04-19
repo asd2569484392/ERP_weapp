@@ -1,0 +1,35 @@
+
+<cu-custom bgColor="bg-gradual-blue" isBack="{{true}}">
+  <view slot="backText" bindtap='backIndex'>返回</view>
+  <view slot="content">客户</view>
+</cu-custom>
+
+<wux-refresher id="wux-refresher" bind:pulling="onPulling" bind:refresh="onRefresh" bind:loadmore="onLoadmore" scrollTop="{{scrollTop}}">
+
+<!-- <view class="cu-bar bg-white">
+  <wux-row class="pane">
+    <wux-col span="6">
+      <text class=''>客户名称</text>
+    </wux-col>
+    <wux-col span="6">
+      <text class=''>联系方式</text>
+    </wux-col>
+  </wux-row>
+</view> -->
+
+<view class="cu-bar bg-white solid-bottom">
+  <view class="action">
+    <text class="icon-title text-blue"></text>客户列表
+  </view>
+</view>
+
+
+<view class='customer_list' wx:for="{{customer}}" wx:for-item="item">
+  <wux-white-space size="small" />
+  <wux-cell-group title="" label="">
+    <wux-cell data-id ="{{item.customerId}}"  bindtap="customer_visit" title="{{item.customerName}}" is-link label="{{item.customerAddress}}" extra="{{item.customerPhone}}"></wux-cell>
+  </wux-cell-group>
+</view>
+
+
+</wux-refresher>

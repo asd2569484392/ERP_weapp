@@ -1,0 +1,16 @@
+{
+  "navigationBarTitleText": "工作台",
+  "usingComponents": {
+    "wux-navbar": "../../dist/navbar/index",
+    "wux-icon": "../../dist/icon/index",
+    "wux-white-space": "../../dist/white-space/index",
+    "wux-row": "../../dist/row/index",
+    "wux-col": "../../dist/col/index",
+    "wux-grids": "../../dist/grids/index",
+    "wux-grid": "../../dist/grid/index",
+    "i-grid": "./lib/grid/index",
+    "i-grid-item": "./lib/grid-item/index",
+    "i-grid-icon": "./lib/grid-icon/index",
+    "i-grid-label": "./lib/grid-label/index"
+  }
+}

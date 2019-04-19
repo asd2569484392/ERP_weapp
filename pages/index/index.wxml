@@ -1,0 +1,22 @@
+<cu-custom bgColor="bg-gradual-pink" isBack="{{false}}">
+  <view slot="content">登录</view>
+</cu-custom>
+
+<view class="logo"></view>
+
+<view class='loginPane'>
+  <sc-input bindinput="getUsername" style='width:80%;' err-text="{{usernameErrorMsg}}" sc-class="sc-input" err-status="{{usernameStatus}}" label="用户名" >{{username}}</sc-input>
+
+  <sc-input bindinput="getPassword" maxlength="10" style='width:80%;' err-text="{{passwordMessage}}" password="true" err-status="{{passwordStatus}}" sc-class="sc-input" label="密码">
+    {{password}}
+  </sc-input>
+
+  <view class="loginBtnPane">
+    <sc-button class="loginBtn" bindtap='login' sc-class="sc-btn sc-outlined-btn" flat>登录</sc-button>
+  </view>
+
+<wux-toast id="wux-toast" />
+  <view class="page__bd footer">
+    <wux-divider text="企业管理ERP系统" />
+  </view>
+</view>

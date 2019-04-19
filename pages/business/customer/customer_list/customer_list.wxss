@@ -1,0 +1,9 @@
+/* pages/business/customer/customer_list/customer_list.wxss */
+.label_right{
+  text-align: right;
+}
+
+.pane{
+  width: 100%;
+  text-align: center;
+}

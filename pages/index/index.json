@@ -1,0 +1,14 @@
+{
+  "navigationBarTitleText": "登录",
+  "usingComponents": {
+    "wux-cell-group": "./../dist/cell-group/index",
+    "wux-cell": "./../dist/cell/index",
+    "wux-input": "./../dist/input/index",
+    "sc-input": "./lib/scui/dist/components/scInput/sc-input",
+    "sc-textarea": "./lib/scui/dist/components/scTextarea/sc-textarea",
+    "sc-button": "./lib/scui/dist/components/scButton/sc-button",
+    "wux-divider": "./../dist/divider/index",
+    "wux-button": "./../dist/button/index",
+    "wux-toast": "./../dist/toast/index"
+  }
+}

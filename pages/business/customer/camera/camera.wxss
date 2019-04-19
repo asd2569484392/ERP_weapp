@@ -1,0 +1,30 @@
+/* pages/business/customer/camera/camera.wxss */
+
+.camera {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  align-items: center; /*垂直居中*/
+  justify-content: center; /*水平居中*/
+}
+
+.pic_btn {
+  width: 64px;
+  height: 64px;
+  text-align: center;
+  bottom: 80px;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.pic_view {
+  position: fixed;
+  bottom: 10px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  z-index: 9999;
+}

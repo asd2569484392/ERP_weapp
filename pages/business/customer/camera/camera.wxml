@@ -1,0 +1,15 @@
+<cu-custom bgColor="bg-gradual-blue" isBack="{{true}}">
+  <view slot="backText" bindtap='backIndex'>返回</view>
+  <view slot="content">拍照</view>
+</cu-custom>
+<camera
+  device-position="back"
+  binderror="error"
+  class='camera'
+>
+<!-- <button type="primary" class='pic_btn' bindtap="takePhoto">拍照</button> -->
+    <!-- <image src='./icon/拍照.png' class='pic_btn'></image> -->
+     <cover-image class="pic_btn" src="./icon/拍照.png" bindtap="takePhoto"></cover-image>
+
+
+</camera>

@@ -1,0 +1,15 @@
+/* pages/business/workbench/workbench.wxss */
+
+.header{
+  height: 100px;
+}
+
+.boxGroup{
+  text-align: center;
+  font-size: 12px;
+  line-height: 20px;
+}
+.pane{
+  text-align: center;
+
+}

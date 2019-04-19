@@ -1,0 +1,23 @@
+{
+  "pages": [
+    "pages/business/customer/customer_list/customer_list",
+    "pages/business/customer/customer_visit/customer_visit",
+    "pages/business/customer/camera/camera",
+    "pages/index/index",
+    "pages/business/workbench/workbench",
+    "pages/business/me/me",
+    "pages/business/all/all",
+    "pages/business/message/message"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#39b54a",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "white",
+    "navigationStyle": "custom"
+  },
+  "usingComponents": {
+    "cu-custom": "/colorui/components/cu-custom"
+  },
+  "sitemapLocation": "sitemap.json"
+}

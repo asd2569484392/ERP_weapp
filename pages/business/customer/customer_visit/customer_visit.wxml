@@ -1,0 +1,105 @@
+<cu-custom bgColor="bg-gradual-blue" isBack="{{true}}">
+  <view slot="backText" bindtap='backIndex'>返回</view>
+  <view slot="content">客户拜访</view>
+</cu-custom>
+
+<view class="cu-bar bg-white">
+  <view class="action">
+    <text class="icon-title text-blue"></text> {{customer.customerStoreName}}
+  </view>
+  <view class="action">
+    <button class="cu-btn bg-green shadow" bindtap="showModal" data-target="Modal">拜访记录</button>
+  </view>
+</view>
+
+<!-- <view class='cu-bar bg-white margin-top'>
+  <wux-row class="pane">
+    <wux-col span="5" class="margin-left left-pane">
+      <view>
+        <button class="cu-btn bg-white btn margin-top  margin-bottom">
+          <image class='btn-icon' src='./icon/qd.png'></image>
+        </button>
+      </view>
+
+    </wux-col>
+    <wux-col span="7">
+        <wux-row class="">
+          <view>今日已签到</view>
+        <view>已签到3天</view>
+        </wux-row>
+    </wux-col>
+  </wux-row>
+</view> -->
+
+<wux-white-space size="small" />
+<wux-card full="{{ true }}" title="签到" extra="上次签到:2015年2月">
+  <view slot="body">
+
+
+    <wux-col span="6">
+      <button class="cu-btn bg-white btn ">
+        <image class='btn-icon' src='./icon/qd_1.png'></image>
+      </button>
+    </wux-col>
+
+    <wux-col span="6" class="info margin-top">
+
+      <view class='info'>
+
+        <view>今日已签到</view>
+        <view>已签到3天</view>
+
+      </view>
+    </wux-col>
+
+
+  </view>
+</wux-card>
+
+
+<wux-white-space size="small" />
+<wux-card full="{{ true }}" title="店铺照片" extra="">
+  <view slot="body">
+    <view class="">
+
+      <view class="grid col-4 grid-square flex-sub">
+
+        <image style='width:80px;height:80px;' class="padding-xs bg-img" src='{{imgList[index]}}' wx:for="{{imgList}}" wx:key="{{index}}" bindtap="ViewImage" data-url="{{imgList[index]}}">
+
+          <view class="cu-tag bg-red" catchtap="DelImg_pic" data-index="{{index}}">
+
+            <text class="icon-close"></text>
+          </view>
+        </image>
+
+
+        <view class="padding-xs solids"  bindtap="ChooseImage" wx:if="{{imgList.length<1}}"  data-type='pic'>
+          <text class="icon-cameraadd"></text>
+        </view>
+      </view>
+    </view>
+  </view>
+</wux-card>
+
+
+<wux-white-space size="small" />
+<wux-card full="{{ true }}" title="陈列照片" extra="最多10张">
+  <view slot="body">
+    <view class="">
+
+      <view class="grid col-4 grid-square flex-sub">
+
+        <image style='width:80px;height:80px;' class="padding-xs bg-img" src='{{storeImageList[index]}}' wx:for="{{storeImageList}}" wx:key="{{index}}" bindtap="ViewImage" data-url="{{storeImageList[index]}}">
+        
+          <view class="cu-tag bg-red" catchtap="DelImg_pics" data-index="{{index}}">
+
+            <text class="icon-close"></text>
+          </view>
+        </image>
+        <view class="padding-xs solids"  bindtap="ChooseImage" wx:if="{{storeImageList.length<10}}"  data-type='pics'>
+          <text class="icon-cameraadd"></text>
+        </view>
+      </view>
+    </view>
+  </view>
+</wux-card>
