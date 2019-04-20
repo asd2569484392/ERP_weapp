@@ -1,0 +1,47 @@
+<cu-custom bgColor="bg-gradual-blue" isBack="{{true}}">
+  <view slot="backText" bindtap='backIndex'>返回</view>
+  <view slot="content">商品上报</view>
+</cu-custom>
+
+<view class="cu-bar bg-white solid-bottom">
+  <view class="action">
+    <text class="icon-title text-blue"></text>产品上报
+  </view>
+</view>
+<view class='container'>
+
+  <view class="{{selected?'show':'hidden'}}">
+    <view class='tab_l'>
+      <block wx:for="{{products}}">
+        <view class="nav_left_items {{curNav == item.kindId ? 'active' : ''}}" bindtap="switchRightTab" data-index="{{index}}" data-id="{{item.kindId}}">{{item.kindName}}</view>
+      </block>
+    </view>
+    <view class='tab_r'>
+      <block wx:for="{{products[curIndex].products}}">
+        <view class="">
+          <!--界面跳转 -->
+          <navigator url="../../detail/detail}}">
+            <!-- <image src="http://pic1.win4000.com/wallpaper/9/5450ae2fdef8a.jpg"></image>
+            <text>{{item.productName}}</text> -->
+        
+        <wux-wing-blank size="default">
+                <wux-white-space size="default" />
+
+            <wux-card title="{{item.productName}}" extra="规格 : {{item.specificationName}}" thumb="https://wux.cdn.cloverstd.com/logo.png" thumb-style="border-radius: 50%;">
+                <view slot="body">当前剩余 : 0</view>
+                <view slot="footer">上次补货 : 2008年2月2日</view>
+            </wux-card>
+        </wux-wing-blank>
+
+          </navigator>
+        </view>
+      </block>
+    </view>
+  </view>
+  <view class="{{selected1?'show':'hidden'}}">
+    222
+  </view>
+  <view class="{{selected2?'show':'hidden'}}">
+    333
+  </view>
+</view>

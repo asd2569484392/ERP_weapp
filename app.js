@@ -110,7 +110,8 @@ App({
   url_list: {
     auth: "http://192.168.1.103:8089/gunsApi/auth",
     customer_list:"http://192.168.1.103:8089/gunsApi/getAllCustomer",
-    customer_visit:"http://192.168.1.103:8089/gunsApi/getCustomer"
+    customer_visit:"http://192.168.1.103:8089/gunsApi/getCustomer",
+    product_group:"http://192.168.1.103:8089/gunsApi/productListByGroup"
   },
 
 

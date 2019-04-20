@@ -136,4 +136,8 @@ Page({
       }
     })
   },
+
+  selectProduct:function(){
+    
+  }
 })

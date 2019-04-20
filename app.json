@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/business/product/product_select/product_select",
     "pages/business/customer/customer_list/customer_list",
     "pages/business/customer/customer_visit/customer_visit",
     "pages/business/customer/camera/camera",

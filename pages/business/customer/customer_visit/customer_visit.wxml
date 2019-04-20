@@ -103,3 +103,19 @@
     </view>
   </view>
 </wux-card>
+
+
+<wux-white-space size="small" />
+<wux-card full="{{ true }}" title="商品上报" extra="">
+  <view slot="body">
+    <view class="">
+
+      <view class="grid col-4 grid-square flex-sub">
+
+        <view class="padding-xs solids"  bindtap="selectProduct"   >
+          <text class="icon-add"></text>
+        </view>
+      </view>
+    </view>
+  </view>
+</wux-card>
